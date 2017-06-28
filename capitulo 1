@@ -1,0 +1,52 @@
+const TASA_DE_IMPUESTO = 0.08;
+const PRECIO_DEL_TELEFONO = 99.99;
+const PRECIO_DEL_ACCESORIO = 9.99;
+
+total = 0;
+maximo_a_gastar = process.argv[2];  // Toma el input del usuario para calcular la cantidad de telefonos
+balance = process.argv[3];
+accesorios = 0;
+telefonos = 0;
+
+if(process.argv[2] === undefined || process.argv[3] === undefined) // Comprobamos que el usuario haya ingresado ambos parametros requeridos
+{
+	console.log('Ingrese el maximo a gastar y el balance de su banco!');
+	process.exit(1); // Termina el programa en caso de que se cumpla la clausula del if
+
+}
+function formatear_total(total) // Agrega $ al valor pasado
+{
+	return "$ " + total.toFixed(2);
+}
+function calcular_interes(total)    // Calcula el precio del interes unicamente
+{
+	return total*TASA_DE_IMPUESTO;	
+}
+
+
+while(true)
+{
+	
+	if(total <  maximo_a_gastar) // Si el total que llevamos es menor
+	{
+		total = total + PRECIO_DEL_TELEFONO;        // 99.9
+		total = total + calcular_interes(PRECIO_DEL_TELEFONO); //7.99
+		telefonos = telefonos +1;
+	}
+	else
+	{
+	break;
+	}
+
+	if(total < maximo_a_gastar) 
+	{
+		total = total + PRECIO_DEL_ACCESORIO;
+		total = total + calcular_interes(PRECIO_DEL_ACCESORIO);
+		accesorios = accesorios+1;
+	}
+
+	console.log("El total gastado hasta ahora es de: "+formatear_total(total)+".");
+}
+	console.log("Has comprado "+telefonos+" telefonos y "+accesorios+"accesorios.");
+
+	console.log("El balance en el banco es de: "+formatear_total(balance-total));
