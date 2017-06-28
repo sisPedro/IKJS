@@ -50,3 +50,13 @@ while(true)
 	console.log("Has comprado "+telefonos+" telefonos y "+accesorios+"accesorios.");
 
 	console.log("El balance en el banco es de: "+formatear_total(balance-total));
+
+
+//Se necesitas operadores para realizar tareas sobre valores.
+//Se neecsitan valores y tipos de datos para llevar a cabo diferentes acciones como calcular o imprimir texto.
+//Son necesarias las variables para almacenar informacion(estado) durante la ejecucion de un programa.
+//Los condicionales son necesarios(if) para tomar decisiones.
+//Son necesarios los ciclos para repetir tareas hasta que se cumpla una condicion.
+//Las funciones son necesarias para organizar el codigo en bloques logicos y reutilizables.
+//Es vital comentar el codigo y adaptarse a estandares
+
