@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+var a,b;					// typeof devuelve el tipo de dato contenido en la variable
+b=typeof a; 					// ya que no hay tipos de variable si no tipos de valores.
+console.log("var a; => ",b);	  		// "undefined"
+=======
 var a,b;
 b=typeof a; 
 console.log("var a; => ",b);		// "undefined"
+>>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
 
 a = "hello world";
 b=typeof a;
@@ -16,7 +22,11 @@ console.log("a = true; => ",b);		// "boolean"
 
 a = null;
 b=typeof a; 
+<<<<<<< HEAD
+console.log("a = null; => ",b);		// weird, bug
+=======
 console.log("a = null; => ",b);		// "object" -- weird, bug
+>>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
 
 a = undefined;
 b=typeof a; 
@@ -25,3 +35,52 @@ console.log("a = undefined; => ",b);		// "undefined"
 a = { b: "c" };
 b=typeof a; 
 console.log("a = {b: 'c'}; => ",b);		// "object"
+<<<<<<< HEAD
+
+console.log("\n\nObjetos en JavaScript: \n\tLos objetos son tipos de dato compuestos en los que podemos\
+enumerar una cantidad de propiedades y asignarle un valor de cualquier tipo");
+
+var obj = {
+        a: "hello world",
+        b: 42
+};
+console.log("var obj = {\n\ta: 'hello world',\n\tb: 42\n};");
+
+console.log("\nvar b = 'a';\n\nobj.b; -> 42\nobj[b]; -> 'hello world'\nobj['b']; -> 42");
+var b = "a";
+
+obj.b;
+obj[b];			// "hello world"
+obj["b"];		// 42
+
+console.log("\n\nArreglos en JavaScript:\n\tLos Arreglos son objetos que almacenan valores de cualquier tipo. Difiere de un objeto regular ya que no tiene propiedades, accediendo a los valores del mismo a traves de un indice numerico.\ Recordar que las computadoras cuentan partiendo del 0");
+
+
+console.log('\nvar arr = [\n\t"hello world",\n\t42,\n\ttrue\n];\n\narr[0]; -> "hello world"\narr[1]; -> 42\narr[2]; -> true\narr.length; -> 3 (Devuelve la cantidad de objetos)\ntypeof arr; -> "object"\nUtilizar Objetos cuando sea conveniente tener propiedades referibles y arreglos para valores numericamente estructurables');
+
+typeof arr;		// "object"
+var arr = [
+	"hello world",
+	42,
+	true
+];
+
+arr[0];			// "hello world"
+arr[1];			// 42
+arr[2];			// true
+arr.length;		// 3
+
+typeof arr;		// "object"
+
+console.log('\n\nFunciones en JavaScript:\n\tLas funciones son un subtipo de los objetos.\nfunction foo() {\n\treturn 42;\n}\n\nfoo.bar = "hello world";\n\ntypeof foo; -> "function"\ntypeof foo(); -> "number"\ntypeof foo.bar; -> "string"\nSi bien typeof foo; devuelve "function" estas son un subtipo de objetos. La asignacion foo.bar = "hello world"; es valida. Su uso es poco frecuente')
+function foo() {
+	return 42;
+}
+
+foo.bar = "hello world";
+
+typeof foo;			// "function"
+typeof foo();			// "number"
+typeof foo.bar;			// "string"
+=======
+>>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
