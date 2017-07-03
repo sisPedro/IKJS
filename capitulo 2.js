@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 var a,b;					// typeof devuelve el tipo de dato contenido en la variable
 b=typeof a; 					// ya que no hay tipos de variable si no tipos de valores.
 console.log("var a; => ",b);	  		// "undefined"
-=======
 var a,b;
 b=typeof a; 
 console.log("var a; => ",b);		// "undefined"
->>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
+
 
 a = "hello world";
 b=typeof a;
@@ -22,11 +20,9 @@ console.log("a = true; => ",b);		// "boolean"
 
 a = null;
 b=typeof a; 
-<<<<<<< HEAD
 console.log("a = null; => ",b);		// weird, bug
-=======
 console.log("a = null; => ",b);		// "object" -- weird, bug
->>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
+
 
 a = undefined;
 b=typeof a; 
@@ -35,7 +31,7 @@ console.log("a = undefined; => ",b);		// "undefined"
 a = { b: "c" };
 b=typeof a; 
 console.log("a = {b: 'c'}; => ",b);		// "object"
-<<<<<<< HEAD
+
 
 console.log("\n\nObjetos en JavaScript: \n\tLos objetos son tipos de dato compuestos en los que podemos\
 enumerar una cantidad de propiedades y asignarle un valor de cualquier tipo");
@@ -82,5 +78,3 @@ foo.bar = "hello world";
 typeof foo;			// "function"
 typeof foo();			// "number"
 typeof foo.bar;			// "string"
-=======
->>>>>>> ca0307ad1b9fbaf7afcfd2bd189d8eac05b60e44
