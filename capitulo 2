@@ -1,8 +1,5 @@
 var a,b;					// typeof devuelve el tipo de dato contenido en la variable
 b=typeof a; 					// ya que no hay tipos de variable si no tipos de valores.
-console.log("var a; => ",b);	  		// "undefined"
-var a,b;
-b=typeof a; 
 console.log("var a; => ",b);		// "undefined"
 
 
@@ -33,8 +30,9 @@ b=typeof a;
 console.log("a = {b: 'c'}; => ",b);		// "object"
 
 
-console.log("\n\nObjetos en JavaScript: \n\tLos objetos son tipos de dato compuestos en los que podemos\
-enumerar una cantidad de propiedades y asignarle un valor de cualquier tipo");
+
+console.log("\n\n\nObjetos en JavaScript: \n\tLos objetos son tipos de dato compuestos en los que podemos\
+enumerar una cantidad de propiedades y asignarle un valor de cualquier tipo:");
 
 var obj = {
         a: "hello world",
@@ -49,7 +47,7 @@ obj.b;
 obj[b];			// "hello world"
 obj["b"];		// 42
 
-console.log("\n\nArreglos en JavaScript:\n\tLos Arreglos son objetos que almacenan valores de cualquier tipo. Difiere de un objeto regular ya que no tiene propiedades, accediendo a los valores del mismo a traves de un indice numerico.\ Recordar que las computadoras cuentan partiendo del 0");
+console.log("\n\n\nArreglos en JavaScript:\n\tLos Arreglos son objetos que almacenan valores de cualquier tipo. Difiere de un objeto regular ya que no tiene propiedades, accediendo a los valores del mismo a traves de un indice numerico.\ Recordar que las computadoras cuentan partiendo del 0:");
 
 
 console.log('\nvar arr = [\n\t"hello world",\n\t42,\n\ttrue\n];\n\narr[0]; -> "hello world"\narr[1]; -> 42\narr[2]; -> true\narr.length; -> 3 (Devuelve la cantidad de objetos)\ntypeof arr; -> "object"\nUtilizar Objetos cuando sea conveniente tener propiedades referibles y arreglos para valores numericamente estructurables');
@@ -65,16 +63,30 @@ arr[0];			// "hello world"
 arr[1];			// 42
 arr[2];			// true
 arr.length;		// 3
-
 typeof arr;		// "object"
 
-console.log('\n\nFunciones en JavaScript:\n\tLas funciones son un subtipo de los objetos.\nfunction foo() {\n\treturn 42;\n}\n\nfoo.bar = "hello world";\n\ntypeof foo; -> "function"\ntypeof foo(); -> "number"\ntypeof foo.bar; -> "string"\nSi bien typeof foo; devuelve "function" estas son un subtipo de objetos. La asignacion foo.bar = "hello world"; es valida. Su uso es poco frecuente')
+console.log('\n\n\nFunciones en JavaScript:\n\tLas funciones son un subtipo de los objetos.\nfunction foo() {\n\treturn 42;\n}\n\nfoo.bar = "hello world";\n\ntypeof foo; -> "function"\ntypeof foo(); -> "number"\ntypeof foo.bar; -> "string"\nSi bien typeof foo; devuelve "function" estas son un subtipo de objetos. La asignacion foo.bar = "hello world"; es valida. Su uso es poco frecuente.');
+
 function foo() {
 	return 42;
 }
 
 foo.bar = "hello world";
-
 typeof foo;			// "function"
 typeof foo();			// "number"
 typeof foo.bar;			// "string"
+
+
+
+console.log('\n\n\nMetodos:\n\tAdemas de propiedades, los tipos de datos antes descriptos tienen metodos muy utiles.\Por ejemplo el metodo lenght devuelve el largo de una cadena. a.toUpperCase() haria pensar que se esta tratando a la variable como un objeto ya que estamos referenciando un metodo. Para lograr eso JS utiliza un objeto("nativo") que envuelve a la variable("primitiva") el cual contiene el prototipo de la funcion en su definicion.\n\nvar a = "hello world"\nvar b = 3.14159;\na.length; -> 11\na.toUpperCase(); -> "HELLO WORLD"\nb.toFixed(4); -> 3.1415\n');
+
+
+var a = "hello world";
+var b = 3.14159;
+
+a.length;
+a.toUpperCase();
+b.toFixed(4);
+
+
+
