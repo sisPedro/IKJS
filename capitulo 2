@@ -17,7 +17,6 @@ console.log("a = true; => ",b);		// "boolean"
 
 a = null;
 b=typeof a; 
-console.log("a = null; => ",b);		// weird, bug
 console.log("a = null; => ",b);		// "object" -- weird, bug
 
 
